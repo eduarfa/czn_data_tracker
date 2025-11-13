@@ -1,0 +1,129 @@
+/* /czn_data_tracker/style.css */
+:root {
+  --bg: #0a0a0a;
+  --card: #1a1a1a;
+  --accent: #8be9fd;
+  --danger: #ff6b6b;
+  --warning: #ffda6a;
+  --safe: #51cf66;
+  --text: #eee;
+  --disabled: #555;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 15px;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  background-image: radial-gradient(circle at 50% 50%, #1a1a2e 0%, #0a0a0a 100%);
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  color: var(--accent);
+  margin: 10px 0;
+  text-shadow: 0 0 10px #8be9fd55;
+}
+
+.controls {
+  text-align: center;
+  margin: 15px 0;
+  padding: 10px;
+  background: var(--card);
+  border-radius: 10px;
+  border: 1px solid #444;
+}
+
+.controls label { margin: 0 10px; }
+input[type="number"], select, input[type="checkbox"] { accent-color: var(--accent); }
+
+.chars-container {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.char-card {
+  background: var(--card);
+  border: 1px solid #444;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  width: 300px;
+  flex: 1;
+  min-width: 280px;
+}
+
+.char-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.char-name { font-weight: bold; font-size: 1.1em; }
+.fmv-status { font-weight: bold; font-size: 1em; }
+
+.safe { color: var(--safe); }
+.warning { color: var(--warning); }
+.danger { color: var(--danger); }
+
+.char-select {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.char-select select {
+  flex: 1;
+  max-width: 140px;
+  font-size: 0.9em;
+  padding: 6px;
+}
+
+.actions { display: flex; flex-direction: column; gap: 6px; }
+
+.action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  padding: 6px 8px;
+  border-radius: 6px;
+  font-size: 0.85em;
+}
+
+button {
+  background: var(--accent);
+  color: #000;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.8em;
+}
+
+button:disabled { background: var(--disabled); cursor: not-allowed; }
+button:hover:not(:disabled) { background: #74c0fc; }
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.8em;
+  color: #666;
+}
+
+@media (max-width: 900px) {
+  .chars-container { flex-direction: column; }
+  .char-card { width: 100%; }
+}

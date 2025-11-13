@@ -1,0 +1,29 @@
+<!-- /czn_data_tracker/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CZN Data Tracker BETA</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>CHAOS ZERO NIGHTMARE<br><small>Data Tracker BETA</small></h1>
+
+  <div class="controls">
+    <label>Tier: <input type="number" id="tier" value="1" min="1" max="20"/></label>
+    <label><input type="checkbox" id="nightmare"/> Nightmare</label>
+    <button id="resetAll">Reset All</button>
+    <button id="exportBuild">Export Build</button>
+  </div>
+
+  <div class="chars-container" id="chars"></div>
+
+  <div class="footer">
+    Data Tracker Made for SS Nightmare (Yuki Luv u)
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
