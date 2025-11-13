@@ -127,12 +127,12 @@ function generateCharHTML(c, i) {
       ${btn(i, 'monster', 'Add Monster Card', true, true, c.actions.monster >= 1 ? 'disabled' : '')}
       ${btn(i, 'removalBase', 'Remove Base Card')}
       ${btn(i, 'removalOther', 'Remove Other Card', canRemoveNonBase(c.actions))}
-      ${btn(i, 'conversion', 'Conversion')}
-      ${btn(i, 'epiNeutral', 'Normal Epi on Neutral', canAddNeutralEpi(c.actions))}
-      ${btn(i, 'divineBase', 'Divine Epi on Base')}
-      ${btn(i, 'divineNeutral', 'Divine Epi on Neutral', canAddDivineNeutral(c.actions))}
-      ${btn(i, 'copyNormal', 'Copy Base/Normal')}
-      ${btn(i, 'copyDivine', 'Copy Divine Epi')}
+      ${btn(i, 'conversion', 'Card Conversion')}
+      ${btn(i, 'epiNeutral', 'Normal Epiphany on Neutral Card', canAddNeutralEpi(c.actions))}
+      ${btn(i, 'divineBase', 'Divine Epiphany on Base Card')}
+      ${btn(i, 'divineNeutral', 'Divine Epiphany on Neutral Card', canAddDivineNeutral(c.actions))}
+      ${btn(i, 'copyNormal', 'Copy Base/Normal Epiphany Card')}
+      ${btn(i, 'copyDivine', 'Copy Divine Epiphany Card')}
     </div>`;
 }
 
