@@ -3,8 +3,8 @@
 /** CZN Data Tracker BETA**/
 
 const allCharacters = [
-  { name: "Yuki S2", color: "#ff79c6" }, { name: "Rei", color: "#8be9fd" }, { name: "Haru ANGEL", color: "#ff6b6b" },
-  { name: "Amir", color: "#50fa7b" }, { name: "Kayron", color: "#ffb86c" }, { name: "Khalipe QUEEN", color: "#bd93f9" },
+  { name: "Yuki S2", color: "#ff79c6" }, { name: "Rei", color: "#8be9fd" }, { name: "Haru", color: "#ff6b6b" },
+  { name: "Amir", color: "#50fa7b" }, { name: "Kayron", color: "#ffb86c" }, { name: "Khalipe", color: "#bd93f9" },
   { name: "Mika", color: "#f1fa8c" }, { name: "Mei Lin", color: "#ff5555" }, { name: "Chizuru", color: "#6272a4" },
   { name: "Sereniel", color: "#8be9fd" }, { name: "Rin", color: "#ffb86c" }, { name: "Magna", color: "#bd93f9" },
   { name: "Tressa", color: "#f1fa8c" }, { name: "Hugo", color: "#ff5555" }, { name: "Veronica", color: "#6272a4" },
